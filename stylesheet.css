@@ -1,4 +1,24 @@
 
+/*Main content*/
+.clock{
+    height: 350px;
+    width: 600px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10%;
+    display: flexbox;
+    background-color: #494b4b;
+}
+
+/*Backbutton*/
+.backbutton{
+    height: 100px;
+    width: 100px;
+    background-color: #195277;
+    margin-top: 0%;
+    border: none;
+    position: sticky;
+}
 
 section,h1 {
     padding: 0 1em;
@@ -40,7 +60,7 @@ section,h1 {
 /* SPOTIFY INFO*/
 
 .spotify-info{
-    background-color:#494b4b
+    background-color:#494b4b;
     height: 100%;
     width: 50%;
     float: right;
