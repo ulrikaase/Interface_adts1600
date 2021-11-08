@@ -7,17 +7,19 @@
     margin: auto;
     margin-top: 10%;
     display: flexbox;
-    background-color: #494b4b;
+    background-color: #56857b;
 }
 
 /*Backbutton*/
 .backbutton{
     height: 100px;
     width: 100px;
-    background-color: #195277;
-    margin-top: 0%;
+    background-color: #56857b;
     border: none;
-    position: sticky;
+    left: 0%;
+    top: 0%;
+    position: fixed;
+    border-bottom-right-radius: 15px;
 }
 
 section,h1 {
@@ -28,7 +30,7 @@ section,h1 {
    {
     display: grid;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 15%;
     justify-content: center;
     grid-template-columns: repeat(3,200px);  /* 3 columns */
     grid-template-rows: repeat(1, 200px); /* 3 rows  */
@@ -39,9 +41,10 @@ section,h1 {
     display: grid;
     margin: auto;
     margin-top: 30px;
-    margin-left: 3%;
+    margin-left: 0%;
+    margin-right: 0%;
     justify-content: center;
-    grid-template-columns: repeat(3,230px);  /* 3 columns */
+    grid-template-columns: repeat(3,220px);  /* 3 columns */
     grid-template-rows: repeat(1, 200px); /* 3 rows  */
     grid-gap:0px 0px; /* 50 pixels of space added between rows and 30 pixels added between columns  */
   }
@@ -49,8 +52,18 @@ section,h1 {
   .grid-item{
     border:thin black;
     padding:10px;
-    background-color:#195277;
+    background-color: #56857b;
+    text-align: center;
+    border-radius: 15px;
   }
+
+  .grid-item2{
+    border:thin black;
+    padding:10px;
+    background-color: #56857b;
+    text-align: center;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -59,22 +72,34 @@ section,h1 {
   button{
       float: right;
   }
+  h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 16px;
+  }
+  a{
+    color:#000;
+  }
+  h2{
+    padding-top: 20%;
+    padding-bottom: auto;
+  }
 
 
 /* SPOTIFY INFO*/
 
 .spotify-info{
-    background-color:#494b4b;
+    background-color:#56857b;
     height: 100%;
     width: 50%;
     float: right;
     padding: 1%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #195277;
-    color: white;
+    background-color: #56857b;
+    color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -84,6 +109,22 @@ section,h1 {
     width: 170px;
     left: 0;
     border-bottom-right-radius: 15px;
+    font-style: normal ;
+  }
+
+  .settings {
+    background-color: #56857b;
+    color: white;
+    padding: 10px;
+    font-size: 2px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    border-bottom-left-radius: 15px;
   }
   
   /* Dropdown button on hover & focus */
@@ -135,6 +176,17 @@ section,h1 {
     min-height: 100%;
     z-index: -20;
   }
+
+
+#buttonBackground{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -20;
+}
+}  
   
   /* Add some content at the bottom of the video/page */
 .content {
@@ -257,3 +309,8 @@ section,h1 {
     from {opacity: .4}
     to {opacity: 1}
   }
+
+
+#buttonBackground{
+  width: 1500px;
+}

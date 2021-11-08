@@ -18,6 +18,7 @@ function myFunction() {
     }
   }
 
+
   var slideIndex = 1;
   showSlides(slideIndex);
   
@@ -53,10 +54,41 @@ function myFunction() {
 
     if (document.getElementById("imgClickAndChange").src == "Images/lightOff.png") 
     {
-        document.getElementById("imgClickAndChange").src = "Images\lamp-logo-light-bulb-technology-icons-3.png";
+        document.getElementById("imgClickAndChange").src = "Images/lamp-logo-light-bulb-technology-icons-3.png";
     }
     else 
     {
         document.getElementById("imgClickAndChange").src = "Images/lightOff.png";
     }
+}
+
+var x = 0;
+
+function changeBackground() {
+
+
+  if (document.getElementById("buttonBackground").src == "video/night.mp4") 
+  {
+      document.getElementById("buttonBackground").src = "video/mountain.mp4";
+      x = 1;
+  }
+  else if(x == 1)
+  {
+    document.getElementById("buttonBackground").src = "video/mountain.mp4";
+    x = 2;
+  }
+  else if(x==2){
+    document.getElementById("buttonBackground").src = "video/lofi2.mp4";
+    x=3
+  }
+  else if(x==3){
+    document.getElementById("buttonBackground").src = "video/lofi.mp4";
+    x=0
+  }
+
+  else
+  {
+      document.getElementById("buttonBackground").src = "video/city.mp4";
+      x=1;
+  }
 }
